@@ -31,3 +31,16 @@ var data = [{
         categories: []
     },
 ];
+
+var boxes = document.querySelectorAll('.box'); //znajdujemy wszystkie boxy
+// petla ktora umieszcza dane z tablicy w boxach
+for (var i = 0; i < boxes.length; i++) { 
+    var headerTitle = boxes[i].querySelector('header');
+    headerTitle.innerHTML = data[i].title;
+    var boxContent = boxes[i].querySelector('p');
+    boxContent.innerHTML = data[i].content;
+// petla ktora dodaje klasy do boxow    
+    for (var l = 0; l < data[i].categories.length; l++) {
+        headerTitle.parentElement.classList.toggle(data[i].categories[l]);
+    }
+}

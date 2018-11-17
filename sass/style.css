@@ -1,9 +1,31 @@
-.highlighted {
-  background-color: #00a8ff;
+body {
+  padding: 10px;
+  text-align: center;
 }
 
-.special-header {
-  background-color: #e84118;
+.box {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  border: 1px solid #000;
+  min-height: 100px;
+  text-align: center;
+  vertical-align: top;
+  opacity: 0.7;
+}
+
+.box header {
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+.special-header header {
+  background-color: yellow;
+}
+
+.highlighted {
+  font-weight: bold;
+  background: lime;
 }
 
 .important {
